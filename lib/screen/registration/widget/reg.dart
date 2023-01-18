@@ -30,7 +30,7 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Column(
                     
                     
                    

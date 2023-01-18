@@ -29,7 +29,7 @@ class _InpLoginState extends State<InpLogin> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Column(
       
                     
                     
