@@ -11,6 +11,7 @@ class regPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child:   ListView(
+          physics: NeverScrollableScrollPhysics(),
           children: [
             Image.asset("assets/app_logo.png",
             
@@ -25,27 +26,24 @@ class regPage extends StatelessWidget {
               ),),
             ),
             
-            Container(
-              
-              height: MediaQuery.of(context).size.height,
-              child: ClipRRect(
-                  
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(20.0),
-                    topRight: Radius.circular(20.0),
-                   
-                  ),
-                  child: Container(
-                    padding: EdgeInsets.all(30),
-        
-                    
-                    
-                    
-                    color: Color.fromARGB(255, 222, 222, 222),
-                    child: Register(),
-                  ),
+            ClipRRect(
+                
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0),
+                 
                 ),
-            )
+                child: Container(
+                  padding: EdgeInsets.all(30),
+                  height: MediaQuery.of(context).size.height,
+        
+                  
+                  
+                  
+                  color: Color.fromARGB(255, 222, 222, 222),
+                  child: Register(),
+                ),
+              )
           ],
         ),
 
