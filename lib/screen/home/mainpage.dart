@@ -1,12 +1,14 @@
-import 'package:evtq/screen/home/bottom_nav/btnNav.dart';
-import 'package:evtq/screen/home/cart/cart.dart';
-import 'package:evtq/screen/home/homescreen/home.dart';
-import 'package:evtq/screen/home/like/like.dart';
+
+
 import 'package:evtq/screen/home/profile/profile.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
+
+import '../bottom_nav/btnNav.dart';
+import 'cart/cart.dart';
+import 'homescreen/home.dart';
+import 'like/like.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({super.key});
